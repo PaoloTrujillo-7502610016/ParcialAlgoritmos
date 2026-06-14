@@ -1,0 +1,31 @@
+public class Ejercicio2 {
+
+    public static void main(String[] args) {
+
+        System.out.print("\n--VALORES AL CUADRADO DE UN ARREGLO--\n");
+
+        //Declaramos variables
+        int cantidad;
+
+        //Ingresamos datos del arreglo
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("\nIngrese el tamaño del arreglo: \n");
+        cantidad = entrada.nextInt();
+        int arreglo[] = new int[cantidad];
+
+
+        // Ciclo para ingresar los valores del arreglo
+        for (int i = 0; i < arreglo.length; i++) {
+            int numero;//el numero o valor de la posicion
+            System.out.print("Ingrese un numero para la posicion " + i + ": ");
+            numero = entrada.nextInt();
+            arreglo[i] = numero * numero;//potencia es igual a multiplicar el numero pos si mismo
+        }
+
+        // Ciclo para mostrar el arreglo en pantalla
+        System.out.println("\nEl resultado del arreglo es:\n");
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.print(arreglo[i] + " - ");
+        }
+    }
+}
