@@ -22,6 +22,7 @@ public class Ejercicio1 {
         }
 
         System.out.println("\n--- TOTAL DE UTILIDADES DE LOS EMPLEADOS ---\n");
+        System.out.println("Salario base de todos los empleados: $"+SALARIO+"\n");
 
         // Ciclo para mostrar los resultados de la utilidad
         for (int i = 0; i < empleados.length; i++) {
